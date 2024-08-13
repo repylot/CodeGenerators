@@ -39,7 +39,7 @@ Not even a programming language.
 
 <br>
 
-### How to use it
+### How to use
 
 You can easily run one of the given notebooks in the `python` directory to generate your code. There, you must look for the **Model Evaluation** section, and run the chunk containing the following code:
 
