@@ -1,6 +1,5 @@
-<p align="center"><img src="repylot_logo.png" width="7%"/></p>
-
 <h1 align="center">RePylot: Fine Tuning GPT-2</h1>
+<p align="center"><img src="repylot_logo.png" width="7%"/></p>
 
 This repository contains several GPT2 fine tuned models retrained using several programming languages scripts, so as to serve as an engine to RePylot Code Generator. The code provided allows you to train GPT-2 on a custom dataset to generate text specific to your needs.
 
@@ -15,7 +14,7 @@ from matplotlib.animation import pyplot as plt, cvars
 import pformat as
 ```
 
-Meanwhile, the original GPT-2 model itself return the next sequence
+Meanwhile, the original GPT-2 model itself returned the next sequence
 
 ```python
 from matplotlib, matplotlib.min.js <~ matplotlib.min.js >) >\n\nNote: Matplot
