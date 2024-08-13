@@ -7,4 +7,4 @@ This repository contains several GPT2 fine tuned models retrained using several 
 Before running the scripts or the notebook, ensure you have the following dependencies installed:
 
 ```bash
-pip install transformers tensorflow tqdm
+pip install transformers
