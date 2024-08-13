@@ -4,7 +4,14 @@ This repository contains several GPT2 fine tuned models retrained using several 
 
 ## Requirements
 
-Before running the scripts or the notebook, ensure you have the following dependencies installed:
+Before running the scripts or the notebook, ensure you have the transformers dependency installed. To do so, feel free to make use of the next command:
 
 ```bash
 pip install transformers
+```
+
+Or simply add the next line at the beginning of your python script
+
+```python
+!pip install transformers
+```
