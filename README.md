@@ -1,13 +1,13 @@
 <h1 align="center">RePylot: Fine Tuning GPT-2</h1>
 <p align="center"><img src="resources/repylot_logo.png" width="7%"/></p>
 
-This repository contains several GPT2 fine tuned models retrained using several programming languages scripts, so as to serve as an engine to RePylot Code Generator. The code provided allows you to train GPT-2 on a custom dataset to generate text specific to your needs.
+This repository contains several GPT2 fine-tuned models retrained using several programming language scripts, so as to serve as an engine for RePylot Code Generator. The code provided allows you to train GPT-2 on a custom dataset to generate text specific to your needs.
 
 <br>
 
 ## Python Code Generator
 
-Whithin 5 single epochs, we asked the fine tuned model to complete `from matplotlib`. We obtained the following result
+We asked the fine-tuned model to complete `from matplotlib`. We obtained the following result
 
 ```python
 from matplotlib.animation import pyplot as plt, cvars
@@ -19,7 +19,7 @@ Meanwhile, the original GPT-2 model itself returned the next sequence
 ```python
 from matplotlib, matplotlib.min.js <~ matplotlib.min.js >) >\n\nNote: Matplot
 ```
-which is not even a python statement.
+which is not even a Python statement.
 
 <br>
 
@@ -39,16 +39,36 @@ Not even a programming language.
 
 <br>
 
+### How to use it
+
+You can easily run one of the given notebooks in the `python` directory to generate your code. There, you must look for the **Model Evaluation** section, and run the chunk containing the following code:
+
+```python
+sequence = "for i, element"
+generate_text(output_dir, sequence, extra_length=20)
+```
+
+where you can modify the `sequence` variable. This will print the model generation, in this case:
+
+```python
+for i, element_name in enumerate(value_list)):
+  r = random.randrange
+```
+
+<br>
+
 ## Requirements
 
-Before running the scripts or the notebook, ensure you have the transformers dependency installed. To do so, feel free to make use of the next command:
+Before running the scripts or notebook, please make sure you install the transformers' dependency. To do so, feel free to make use of the next command:
 
 ```bash
 pip install transformers
 ```
 
-Or simply add the next line at the beginning of your python script
+Or simply add the next line at the beginning of your Python script
 
 ```python
 !pip install transformers
 ```
+
+Also, you will need to have PyTorch installed, since this is what `transformers`' models are based in
