@@ -71,4 +71,4 @@ Or simply add the next line at the beginning of your Python script
 !pip install transformers
 ```
 
-Also, you will need to have PyTorch installed, since this is what `transformers`' models are based in
+Also, you will need to have PyTorch installed, since this is what `transformers`' models are based in. You can install this framework using this [link](https://pytorch.org/get-started/locally/).
