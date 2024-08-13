@@ -59,7 +59,7 @@ for i, element_name in enumerate(value_list)):
 
 ## Requirements
 
-Before running the scripts or notebook, please make sure you install the transformers' dependency. To do so, feel free to make use of the next command:
+Before running the scripts or notebook, please make sure you install the `transformers`' dependency. To do so, feel free to make use of the next command:
 
 ```bash
 pip install transformers
