@@ -7,11 +7,11 @@ This repository contains several GPT2 fine-tuned models retrained using several 
 
 ## Python Code Generator
 
-We asked the fine-tuned model to complete `from matplotlib`. We obtained the following result
+We asked the fine-tuned model to complete `from matplotlib import`. We obtained the following result
 
 ```python
-from matplotlib.animation import pyplot as plt, cvars
-import pformat as
+from matplotlib import pyplot as plt
+from sklearn.metrics import accuracy
 ```
 
 Meanwhile, the original GPT-2 model itself returned the next sequence
@@ -23,19 +23,40 @@ which is not even a Python statement.
 
 <br>
 
-Furthermore, we asked RePylot to complete the sequence `for key`, and returned the next result
+Other examples:
 
+```
+Prompt:  for key
+```
 ```python
-for key in zip(*generate_pair(n, n - key + 1, i), j
+for key in key.values():
+  if self.open_file(filename): # get the OpenPG
 ```
 
-On the other hand, GPT-2 returned
+<br>
 
 ```
-for keyframes and transitions between keyframes), and a series of options to allow for different
+Prompt:  def inverse_sort(list, number):
+```
+```python
+def inverse_sort(list, number):
+  return [list[float] for _ in range(number)]
+
+def inverse_sort(list, number):
+  return []
 ```
 
-Not even a programming language.
+<br>
+
+```
+Prompt:  if (a ==
+```
+```python
+if (a == a[0]) 
+  # check if the queue is empty 
+  assert len(a)!=
+
+```
 
 <br>
 
