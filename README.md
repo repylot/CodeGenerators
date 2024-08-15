@@ -140,7 +140,10 @@ for i, element_name in enumerate(value_list)):
 ```
 
 <br>
-You can also use the web version by entering into [repylot website](https://repylot.github.com)
+
+You can also use the web version by entering into [repylot website](repylot.github.com)
+
+<br>
 
 https://github.com/user-attachments/assets/838e2b45-ba97-412e-bac9-9ae31021c195
 
