@@ -38,7 +38,7 @@ Other examples:
 Prompt (Bigger response allowed):  public class Main implements
 ```
 ```java
-public class Main implemens Main {
+public class Main implements Main {
 
  private final String defaultName;
  private final String name;
