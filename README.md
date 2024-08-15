@@ -5,7 +5,15 @@ This repository contains several GPT2 fine-tuned models retrained using several 
 
 <br>
 
-## Python Code Generator
+## Index
+- Python Code Generator
+- Java Code Generator
+- How to use
+- Requirements
+
+<br>
+
+# Python Code Generator
 
 We asked the fine-tuned model to complete `from matplotlib import`. We obtained the following result
 
@@ -115,7 +123,7 @@ Prompt:  @Override
 
 <br>
 
-### How to use
+## How to use
 
 You can easily run one of the given notebooks in the `python` directory to generate your code. There, you must look for the **Model Evaluation** section, and run the chunk containing the following code:
 
