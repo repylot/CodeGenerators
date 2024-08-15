@@ -5,7 +5,15 @@ This repository contains several GPT2 fine-tuned models retrained using several 
 
 <br>
 
-## Python Code Generator
+## Index
+- Python Code Generator
+- Java Code Generator
+- How to use
+- Requirements
+
+<br>
+
+# Python Code Generator
 
 We asked the fine-tuned model to complete `from matplotlib import`. We obtained the following result
 
@@ -60,7 +68,62 @@ if (a == a[0])
 
 <br>
 
-### How to use
+## Java Code Generator
+
+The Java Code Generator model has been fine-tuned using the source code from several popular frameworks, such as Spring or Google Gauva, and even some big projects like ElasticSearch. Apart from that, other GitHub repositories were used (See [GitHub Scrapper for RePylot](https://github.com/repylot/GithubScrapper)). We asked the model to complete `public class`. We obtained the following result
+
+```java
+public class CityTests {
+  @Test
+  void defaultPropertyPlaceholders() {
+    this.contextRunner.run
+```
+
+Meanwhile, the original GPT-2 model itself returned the next sequence
+
+```
+public class Bool is a constructor function that provides an argument that you can use to define new value types for your classes:\n\nclass Bool'}]
+```
+
+<br>
+
+Other examples:
+
+```
+Prompt:  import
+```
+```java
+import org.springframework.boot.actuate.endpoint.annotation.Endpoint;
+import
+```
+
+<br>
+
+```
+Prompt:  public static void
+```
+```java
+public static void main(String[] args) {
+  String description = "The user name is: %s
+```
+
+<br>
+
+```
+Prompt:  @Override
+```
+```java
+  @Override
+  public String toString() {
+    return this.name;
+  }
+}
+ /* * Copyright 2012-
+```
+
+<br>
+
+## How to use
 
 You can easily run one of the given notebooks in the `python` directory to generate your code. There, you must look for the **Model Evaluation** section, and run the chunk containing the following code:
 
@@ -75,6 +138,14 @@ where you can modify the `sequence` variable. This will print the model generati
 for i, element_name in enumerate(value_list)):
   r = random.randrange
 ```
+
+<br>
+
+You can also use the web version by entering into [repylot website](https://repylot.github.io)
+
+<br>
+
+https://github.com/user-attachments/assets/838e2b45-ba97-412e-bac9-9ae31021c195
 
 <br>
 
