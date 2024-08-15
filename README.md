@@ -60,6 +60,61 @@ if (a == a[0])
 
 <br>
 
+## Java Code Generator
+
+We asked the fine-tuned model to complete `public class`. We obtained the following result
+
+```java
+public class CityTests {
+  @Test
+  void defaultPropertyPlaceholders() {
+    this.contextRunner.run
+```
+
+Meanwhile, the original GPT-2 model itself returned the next sequence
+
+```
+public class Bool is a constructor function that provides an argument that you can use to define new value types for your classes:\n\nclass Bool'}]
+```
+
+<br>
+
+Other examples:
+
+```
+Prompt:  import
+```
+```java
+import org.springframework.boot.actuate.endpoint.annotation.Endpoint;
+import
+```
+
+<br>
+
+```
+Prompt:  public static void
+```
+```java
+public static void main(String[] args) {
+  String description = "The user name is: %s
+```
+
+<br>
+
+```
+Prompt:  @Override
+```
+```java
+  @Override
+  public String toString() {
+    return this.name;
+  }
+}
+ /* * Copyright 2012-
+```
+
+<br>
+
 ### How to use
 
 You can easily run one of the given notebooks in the `python` directory to generate your code. There, you must look for the **Model Evaluation** section, and run the chunk containing the following code:
