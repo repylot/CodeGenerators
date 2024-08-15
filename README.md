@@ -6,10 +6,96 @@ This repository contains several GPT2 fine-tuned models retrained using several 
 <br>
 
 ## Index
-- Python Code Generator
 - Java Code Generator
+- Python Code Generator
 - How to use
 - Requirements
+
+<br>
+
+## Java Code Generator
+
+The Java Code Generator model has been fine-tuned using the source code from several popular frameworks, such as Spring or Google Gauva, and even some big projects like ElasticSearch. Apart from that, other GitHub repositories were used (See [GitHub Scrapper for RePylot](https://github.com/repylot/GithubScrapper)). We asked the model to complete `public class`. We obtained the following result
+
+```java
+public class CityTests {
+  @Test
+  void defaultPropertyPlaceholders() {
+    this.contextRunner.run
+```
+
+Meanwhile, the original GPT-2 model itself returned the next sequence
+
+```
+public class Bool is a constructor function that provides an argument that you can use to define new value types for your classes:\n\nclass Bool'}]
+```
+
+<br>
+
+Other examples:
+
+```
+Prompt (Bigger response allowed):  public class Main implement
+```
+```java
+public class Main implement Main {
+
+ private final String defaultName;
+ private final String name;
+
+ @Override
+ public String getDefaultName() {
+  return "defaultName";
+ }
+
+ public void setDefaultName(String defaultName) {
+  this.defaultName = defaultName;
+ }
+
+}
+```
+
+<br>
+
+```
+Prompt:  public static void
+```
+```java
+public static void main(String[] args) throws IOException {
+    final MockTerminal terminal = mockTerminal(String.class);
+
+    final MockTerminalServices services = new MockTerminalService("netty", "netty2", "netty3");
+
+    final SystemdPlugin.Plugin indexService = new MockSystemdPlugin(Settings.builder());
+    for (SearchService searchService : services) {
+         IndexSettings indexService = IndexSettingsModule.newIndexSettings(index
+```
+
+<br>
+
+Some shorter answers are the following
+
+```
+Prompt:  @Override
+```
+```java
+  @Override
+  public String toString() {
+    return this.name;
+  }
+}
+ /* * Copyright 2012-
+```
+
+<br>
+
+```
+Prompt:  import
+```
+```java
+import org.springframework.boot.actuate.endpoint.annotation.Endpoint;
+import
+```
 
 <br>
 
@@ -65,71 +151,6 @@ if (a == a[0])
   # check if the queue is empty 
   assert len(a)!=
 
-```
-
-<br>
-
-## Java Code Generator
-
-The Java Code Generator model has been fine-tuned using the source code from several popular frameworks, such as Spring or Google Gauva, and even some big projects like ElasticSearch. Apart from that, other GitHub repositories were used (See [GitHub Scrapper for RePylot](https://github.com/repylot/GithubScrapper)). We asked the model to complete `public class`. We obtained the following result
-
-```java
-public class CityTests {
-  @Test
-  void defaultPropertyPlaceholders() {
-    this.contextRunner.run
-```
-
-Meanwhile, the original GPT-2 model itself returned the next sequence
-
-```
-public class Bool is a constructor function that provides an argument that you can use to define new value types for your classes:\n\nclass Bool'}]
-```
-
-<br>
-
-Other examples:
-
-```
-Prompt:  public class Main implement
-```
-```java
-public class Main implement IndexMetadata {
-    public void runIndex() throws IOException {
-```
-
-<br>
-
-```
-Prompt:  public static void
-```
-```java
-public static void main(String[] args) {
-  String description = "The user name is: %s
-```
-
-<br>
-
-```
-Prompt:  @Override
-```
-```java
-  @Override
-  public String toString() {
-    return this.name;
-  }
-}
- /* * Copyright 2012-
-```
-
-<br>
-
-```
-Prompt:  import
-```
-```java
-import org.springframework.boot.actuate.endpoint.annotation.Endpoint;
-import
 ```
 
 <br>
