@@ -70,7 +70,7 @@ if (a == a[0])
 
 ## Java Code Generator
 
-We asked the fine-tuned model to complete `public class`. We obtained the following result
+The Java Code Generator model have been fine-tuned using the source code from several popular frameworks, such as Spring or ElasticSearch, apart from other GitHub repositories. We asked the model to complete `public class`. We obtained the following result
 
 ```java
 public class CityTests {
