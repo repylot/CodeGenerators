@@ -90,11 +90,11 @@ public class Bool is a constructor function that provides an argument that you c
 Other examples:
 
 ```
-Prompt:  import
+Prompt:  public class Main implement
 ```
 ```java
-import org.springframework.boot.actuate.endpoint.annotation.Endpoint;
-import
+public class Main implement IndexMetadata {
+    public void runIndex() throws IOException {
 ```
 
 <br>
@@ -119,6 +119,14 @@ Prompt:  @Override
   }
 }
  /* * Copyright 2012-
+```
+
+```
+Prompt:  import
+```
+```java
+import org.springframework.boot.actuate.endpoint.annotation.Endpoint;
+import
 ```
 
 <br>
