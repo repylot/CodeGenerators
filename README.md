@@ -35,10 +35,10 @@ public class Bool is a constructor function that provides an argument that you c
 Other examples:
 
 ```
-Prompt (Bigger response allowed):  public class Main implement
+Prompt (Bigger response allowed):  public class Main implements
 ```
 ```java
-public class Main implement Main {
+public class Main implemens Main {
 
  private final String defaultName;
  private final String name;
